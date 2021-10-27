@@ -5,6 +5,11 @@ Created on Mon Oct 23 18:53:36 2021
 @author: JYY
 """
 
+'''
+蓝色线为原始分割线，橙色线为感知机输出分割线。
+'''
+
+
 import numpy as np
 from matplotlib import pyplot as plt
 
