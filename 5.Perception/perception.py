@@ -18,7 +18,7 @@ N = 50                  # 样本数
 lr = 1                  # 学习率
 epoch_num = 1000        # 最大迭代次数
 
-
+# 初始化样本
 samples = np.zeros((N,3))
 plt.axis([0,1,0,1])
 
@@ -37,7 +37,7 @@ for i in range(N):
     samples[i,2] = 1 if samples[i,1]>(samples[i,0]-0.5)*k+0.5 else -1
     plt.scatter(samples[i,0],samples[i,1], c='red' if samples[i,2]==1 else 'green')
 
-
+# 初始化权重w，b
 w = np.random.rand(2)
 b = np.random.rand()
 
